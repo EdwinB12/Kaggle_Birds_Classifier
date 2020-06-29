@@ -88,8 +88,9 @@ Two different training methods were explored: Building a model from scratch with
 | | CNN-010 |  | CNN--006 | Adam | 1e-4 | All | 25,566,920 | 64 | Validation Categorical Accuracy |
 
 
-
 ### Model from Scratch
+
+CNN 001-003 are built from scratch where the network has not undergone any previous training. Dense and convolutional layers haved 'glorot uniform' initialisation and the biases initialisation is zeros (both Keras default). The general architecture is based on LeNet-5 with multiple combinations of convolutional filters, activation function, pooling and dense layers. 
 
 ### Pre-trained Models
 
