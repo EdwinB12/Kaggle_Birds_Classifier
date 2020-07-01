@@ -90,11 +90,19 @@ Two different training methods were explored: Building a model from scratch with
 
 ### Model from Scratch
 
-CNN 001-003 are built from scratch where the network has not undergone any previous training. Dense and convolutional layers haved 'glorot uniform' initialisation and the biases initialisation is zeros (both Keras default). The general architecture is based on LeNet-5 with multiple combinations of convolutional filters, activation function, pooling and dense layers. 
+CNN 001-003 are built from scratch where the network has not undergone any previous training. Dense and convolutional layers have 'glorot uniform' initialisation and the biases initialisation is zeros (both Keras default). The general architecture is based on LeNet-5 with multiple combinations of convolutional filters, activation function, pooling and dense layers.
+
+I did a small random search for hyperparemeter tuning as I am limited to one GPU. Number of units in conv layer 1,2 and 3 was searched in combination with batch size and learning rate. As I was confident pre-trained models were going to give a better result, I didn't spend much time on this and most of my time was spent familiarising myself with keras tuner functionality. 
 
 ### Pre-trained Models
 
+There are ~812k images of birds in the [imagenet database](http://www.image-net.org/about-stats). Therefore a pre-trained model trained on imagenet seems sensible. There are many [options](https://www.tensorflow.org/api_docs/python/tf/keras/applications) easily available in tensorflow/keras. I tried a few including VGG-16 and resnet but got results of over 85% categorical accuracy with Xception. To test, I simply downloaded the model without the top layer and added a flatten and a dense layer of 200 units with a softmax activation to classify. Further fine-tuning of earlier layers is then tested. 
+
+CNN 004 uses VGG-16. CNN 005-010 are variations of using Xception pre-trained weights. Details are included in the [table](##training). 
+
 ## Model Evaluation 
+
+
 
 ## Understanding the Model
 
