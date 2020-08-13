@@ -76,16 +76,16 @@ Two different training methods were explored: Building a model from scratch with
 
 | Notebook  | Model Index  | Model Name  | Pre-trained |  Optimizer | Learning Rate | Trainable Layers | Trainable Params | Batch Size | Early Stop Metric  |
 |:-:|---|---|---|---|---|---|---|---|---|
-| | CNN-001 | CNN--001.200616161702.17--1.801 | No | Adam | 1e-3 | All | 321,208 | 32 | Validation Loss |
-| | CNN-002 | CNN--002_batch_size64.200618162037.05--1.632 | No | Adam | 1e-3 | All | 321,208 | 64 | Validation Loss |
-| | CNN-003 | CNN--003.200619202528.16--1.571 | No | Adam | 1e-3 | All | - | 64 | Validation Loss |
-| | CNN-004 | CNN--004.200621220424.14--2.350 | VGG16 no_top | Adam | 1e-3 | Top Dense layer only | 5,017,800 | 64 | Validation Loss |
-| | CNN-005 | CNN--005.200623090057.08--7.169 | Xception no_top | Adam | 1e-3 | Top Dense layer only| 20,070,600 | 64 | Validation Loss |
-| | CNN-006 | CNN--006.200627131552.12--0.480--0.897 | CNN--005 | Adam | 1e-3 | All | 40,877,552 | 64 | Validation Categorical Accuracy |
-| | CNN-007 | CNN--007.200628152156.12--0.506--0.895 | CNN--005 | Adam | 1e-3 | Layers 32 and above only | 39,958,616 | 64 | Validation Categorical Accuracy |
-| | CNN-008 | CNN--008.200628171119.26--0.646--0.916 | CNN--005 | Adam | 1e-3 | Layers 122 and above only | 25,566,920 | 64 | Validation Categorical Accuracy |
-| | CNN-009 | CNN--009.200628204955.14--0.637--0.913 | CNN--005 | Adam | 1e-4 | Layers 122 and above only | 25,566,920 | 64 | Validation Categorical Accuracy |
-| | CNN-010 |  | CNN--006 | Adam | 1e-4 | All | 25,566,920 | 64 | Validation Categorical Accuracy |
+|[CNN_001](CNN_001_Training.ipynb) | CNN-001 | CNN--001.200616161702.17--1.801 | No | Adam | 1e-3 | All | 321,208 | 32 | Validation Loss |
+|[CNN_002](CNN_002_Training_Batch_Testing.ipynb) | CNN-002 | CNN--002_batch_size64.200618162037.05--1.632 | No | Adam | 1e-3 | All | 321,208 | 64 | Validation Loss |
+|[CNN_003](CNN_003_Training_hyperparams_tuning.ipynb) | CNN-003 | CNN--003.200619202528.16--1.571 | No | Adam | 1e-3 | All | - | 64 | Validation Loss |
+|[CNN_004](CNN_004_Training_VGG16_TL.ipynb) | CNN-004 | CNN--004.200621220424.14--2.350 | VGG16 no_top | Adam | 1e-3 | Top Dense layer only | 5,017,800 | 64 | Validation Loss |
+|[CNN_005](CNN_005_Training_Xception_TL.ipynb) | CNN-005 | CNN--005.200623090057.08--7.169 | Xception no_top | Adam | 1e-3 | Top Dense layer only| 20,070,600 | 64 | Validation Loss |
+|[CNN_006](CNN_006_Training_Xception_TL.ipynb) | CNN-006 | CNN--006.200627131552.12--0.480--0.897 | CNN--005 | Adam | 1e-3 | All | 40,877,552 | 64 | Validation Categorical Accuracy |
+|[CNN_007](CNN_007_Training_Xception_TL.ipynb) | CNN-007 | CNN--007.200628152156.12--0.506--0.895 | CNN--005 | Adam | 1e-3 | Layers 32 and above only | 39,958,616 | 64 | Validation Categorical Accuracy |
+|[CNN_008](CNN_008_Training_Xception_TL.ipynb) | CNN-008 | CNN--008.200628171119.26--0.646--0.916 | CNN--005 | Adam | 1e-3 | Layers 122 and above only | 25,566,920 | 64 | Validation Categorical Accuracy |
+|[CNN_009](CNN_009_Training_Xception_TL.ipynb) | CNN-009 | CNN--009.200628204955.14--0.637--0.913 | CNN--005 | Adam | 1e-4 | Layers 122 and above only | 25,566,920 | 64 | Validation Categorical Accuracy |
+|[CNN_010](CNN_010_Training_Xception_TL.ipynb)| CNN-010 |  | CNN--006 | Adam | 1e-4 | All | 25,566,920 | 64 | Validation Categorical Accuracy |
 
 
 ### Model from Scratch
